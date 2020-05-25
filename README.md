@@ -1,13 +1,11 @@
-# README
-## This is the README for your extension "dw-theme"
-You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
+# DW-Theme
+## DW-Theme für Visual Studio Code
+Schöne Funktionalität für professionelle Entwickler
 
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+CMD+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (macOS) to see a list of Markdown snippets
+DW-Theme ist ein Farbschema, ein benutzerdefiniertes Benutzeroberflächendesign und ein vollständiger Symbolsatz für Visual Studio Code. Es wurde vom Autor der ursprünglichen Monokai-Farben entworfen. Sorgfältig ausgewählte Farbschattierungen bilden die Grundlage für eine kompromisslose, nicht ablenkende Benutzeroberfläche. Das einzige Ziel von Monokai Pro besteht darin, dass Sie sich auf Ihren Code konzentrieren können.s
 
-### For more information
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
+### Für mehr Informationen
+* [Homepage](https://wetter.dev)
+* [Source Code](https://github.com/davidwetter/vsc-theme)
 
-**Enjoy!**
+**Viel Spass!**
