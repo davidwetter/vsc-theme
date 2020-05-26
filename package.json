@@ -3,7 +3,7 @@
     "displayName": "DW-Theme",
     "description": "Das DW Theme ist ein Farbschema und angepasstes Benutzeroberflächen-Thema für Code-Editoren. Es wurde mit Blick auf schöne Funktionalität entworfen. Sorgfältig ausgewählte Farbschattierungen bilden die Grundlage einer kompromisslosen, nicht ablenkenden Benutzeroberfläche.",
     "publisher": "davidwetter",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "engines": {
         "vscode": "^1.45.0"
     },
