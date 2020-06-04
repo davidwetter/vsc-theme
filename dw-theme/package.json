@@ -1,0 +1,19 @@
+{
+    "name": "dw-theme",
+    "displayName": "DW Theme",
+    "description": "Das DW Theme ist ein Farbschema und angepasstes Benutzeroberflächen-Thema für Code-Editoren. Es wurde mit Blick auf schöne Funktionalität entworfen. Sorgfältig ausgewählte Farbschattierungen bilden die Grundlage einer kompromisslosen, nicht ablenkenden Benutzeroberfläche.",
+    "version": "1.0",
+    "engines": {
+        "vscode": "^1.45.0"
+    },
+    "categories": [
+        "Themes"
+    ],
+    "contributes": {
+        "themes": [{
+            "label": "David Wetter",
+            "uiTheme": "vs-dark",
+            "path": "./themes/David Wetter-color-theme.json"
+        }]
+    }
+}
