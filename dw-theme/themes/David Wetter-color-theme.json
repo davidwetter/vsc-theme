@@ -1,7 +1,8 @@
 {
-	"name": "David Wetter",
-	"type": "dark",
-	"colorSpaceName": "sRGB",
+    "name": "DW Theme",
+    "type": "dark",
+    "author": "David Wetter",
+    "colorSpaceName": "sRGB",
     "colors": {
         "focusBorder": "#727072",
         "foreground": "#fcfcfa",
@@ -45,7 +46,7 @@
         "badge.foreground": "#2d2a2e",
         "badge.background": "#ffd866",
         "progressBar.background": "#403e41",
-        "list.activeSelectionBackground": "#2d2a2e",
+        "list.activeSelectionBackground": "#fcfcfa0c",
         "list.activeSelectionForeground": "#ffd866",
         "list.errorForeground": "#ff6188",
         "list.warningForeground": "#fc9867",
@@ -53,9 +54,9 @@
         "list.focusBackground": "#2d2a2e",
         "list.focusForeground": "#fcfcfa",
         "list.highlightForeground": "#fcfcfa",
-        "list.hoverBackground": "#221f22",
+        "list.hoverBackground": "#fcfcfa0c",
         "list.hoverForeground": "#fcfcfa",
-        "list.inactiveSelectionBackground": "#2d2a2e",
+        "list.inactiveSelectionBackground": "#c1c0c00c",
         "list.inactiveSelectionForeground": "#ffd866",
         "list.inactiveFocusBackground": "#2d2a2e",
         "list.invalidItemForeground": "#ff6188",
@@ -125,6 +126,7 @@
         "tab.inactiveModifiedBorder": "#5b595c",
         "tab.unfocusedActiveModifiedBorder": "#403e41",
         "tab.unfocusedInactiveModifiedBorder": "#403e41",
+        "tab.lastPinnedBorder": "#5b595c",
         "editor.background": "#2d2a2e",
         "editor.foreground": "#fcfcfa",
         "editorLineNumber.foreground": "#5b595c",
@@ -236,9 +238,11 @@
         "statusBar.noFolderForeground": "#727072",
         "statusBar.noFolderBorder": "#19181a",
         "statusBarItem.activeBackground": "#2d2a2e",
-        "statusBarItem.hoverBackground": "#2d2a2e",
+        "statusBarItem.hoverBackground": "#fcfcfa0c",
         "statusBarItem.prominentBackground": "#403e41",
         "statusBarItem.prominentHoverBackground": "#403e41",
+        "statusBarItem.remoteForeground": "#a9dc76",
+        "statusBarItem.remoteBackground": "#221f22",
         "statusBar.border": "#19181a",
         "titleBar.activeBackground": "#221f22",
         "titleBar.activeForeground": "#939293",
@@ -283,11 +287,14 @@
         "welcomePage.buttonBackground": "#403e41",
         "welcomePage.buttonHoverBackground": "#5b595c",
         "walkThrough.embeddedEditorBackground": "#221f22",
-        "gitDecoration.modifiedResourceForeground": "#a9dc76",
+        "gitDecoration.addedResourceForeground": "#a9dc76",
+        "gitDecoration.modifiedResourceForeground": "#ffd866",
         "gitDecoration.deletedResourceForeground": "#ff6188",
         "gitDecoration.untrackedResourceForeground": "#fc9867",
         "gitDecoration.ignoredResourceForeground": "#5b595c",
         "gitDecoration.conflictingResourceForeground": "#fc9867",
+        "gitDecoration.stageDeletedResourceForeground": "#ff6188",
+        "gitDecoration.stageModifiedResourceForeground": "#ffd866",
         "symbolIcon.arrayForeground": "#ff6188",
         "symbolIcon.booleanForeground": "#ff6188",
         "symbolIcon.classForeground": "#78dce8",
@@ -343,7 +350,15 @@
         "debugIcon.breakpointDisabledForeground": "#c1c0c0",
         "debugIcon.breakpointUnverifiedForeground": "#fc9867",
         "debugIcon.breakpointStackframeForeground": "#fcfcfa",
-        "debugIcon.breakpointCurrentStackframeForeground": "#ffd866"
+        "debugIcon.breakpointCurrentStackframeForeground": "#ffd866",
+        "charts.red": "#ff6188",
+        "charts.orange": "#fc9867",
+        "charts.yellow": "#ffd866",
+        "charts.green": "#a9dc76",
+        "charts.blue": "#78dce8",
+        "charts.purple": "#ab9df2",
+        "charts.foreground": "#fcfcfa",
+        "charts.lines": "#727072"
     },
     "tokenColors": [
         {
@@ -478,6 +493,13 @@
             }
         },
         {
+            "scope": "constant.other.elm",
+            "settings": {
+                "name": "Constants in elm",
+                "foreground": "#78dce8"
+            }
+        },
+        {
             "scope": "constant.numeric",
             "settings": {
                 "name": "Number",
@@ -608,7 +630,8 @@
             "scope": [
                 "entity.name.tag",
                 "entity.name.tag.js.jsx support.class.component.js.jsx",
-                "entity.name.tag support.class.component"
+                "entity.name.tag support.class.component",
+                "source.vue support.class.component"
             ],
             "settings": {
                 "name": "Tag name",
@@ -646,7 +669,8 @@
                 "entity.other.attribute-name.class.css",
                 "entity.other.attribute-name.parent-selector-suffix.css",
                 "entity.other.attribute-name.parent-selector-suffix.css punctuation.definition.entity.css",
-                "entity.other.attribute-name.css"
+                "entity.other.attribute-name.css",
+                "entity.other.animation-name.css"
             ],
             "settings": {
                 "name": "CSS class",
@@ -798,6 +822,13 @@
             }
         },
         {
+            "scope": "keyword.other.parenthesis.elm",
+            "settings": {
+                "name": "elm parenthesis",
+                "foreground": "#939293"
+            }
+        },
+        {
             "scope": [
                 "keyword.other.fn.rust",
                 "keyword.other.rust",
@@ -931,18 +962,18 @@
         },
         {
             "scope": [
-                "meta.function-call.python",
-                "meta.function-call.arguments.python meta.function-call.python"
+                "meta.function-call.generic.python",
+                "support.function.builtin.python"
             ],
             "settings": {
-                "name": "Function call",
+                "name": "Function call (vs)",
                 "foreground": "#a9dc76"
             }
         },
         {
             "scope": "meta.function-call.python meta.function-call.arguments.python",
             "settings": {
-                "name": "Function arguments",
+                "name": "Function arguments (vs)",
                 "foreground": "#fcfcfa"
             }
         },
@@ -1078,7 +1109,13 @@
         {
             "scope": [
                 "meta.attribute.rust",
-                "variable.language.rust"
+                "meta.annotation.rust",
+                "variable.language.rust",
+                "variable.annotation.rust",
+                "meta.annotation.rust string",
+                "meta.annotation.rust keyword",
+                "meta.annotation.rust keyword.operator",
+                "meta.attribute.rust string"
             ],
             "settings": {
                 "name": "rust specific (variable.language.rust is 'self' keyword.",
@@ -1137,7 +1174,8 @@
                 "punctuation.section.embedded",
                 "punctuation.section.embedded entity.name.tag",
                 "punctuation.section.embedded constant.other",
-                "punctuation.section.embedded source"
+                "punctuation.section.embedded source",
+                "punctuation.section.embedded.begin"
             ],
             "settings": {
                 "name": "Punctuation section embedded (i.e. ?php blocks in html)",
@@ -1151,7 +1189,9 @@
                 "punctuation.definition.string.template.begin",
                 "punctuation.definition.string.template.end",
                 "string.quoted.template punctuation.definition.string.begin",
-                "string.quoted.template punctuation.definition.string.end"
+                "string.quoted.template punctuation.definition.string.end",
+                "punctuation.definition.template-expression.begin",
+                "punctuation.definition.template-expression.end"
             ],
             "settings": {
                 "name": "Punctuation template string (`example`)",
@@ -1324,7 +1364,7 @@
         {
             "scope": "storage.type",
             "settings": {
-                "name": "Types and definition/declaration keywords should use the following scope. Examples include int, bool, char, func, function, class and def. Depending on the language and semantics, const may be this or storage.modifier.",
+                "name": "Types and definition / declaration keywords should use the following scope. Examples include int, bool, char, func, function, class and def. Depending on the language and semantics, const may be this or storage.modifier.",
                 "fontStyle": "italic",
                 "foreground": "#78dce8"
             }
@@ -1425,7 +1465,10 @@
             }
         },
         {
-            "scope": "string source punctuation.section.embedded",
+            "scope": [
+                "string source punctuation.section.embedded",
+                "string punctuation.definition.string source"
+            ],
             "settings": {
                 "name": "Embedded punctuation begin / end in template string",
                 "foreground": "#939293"
@@ -1508,6 +1551,13 @@
             "settings": {
                 "name": "Function name",
                 "foreground": "#a9dc76"
+            }
+        },
+        {
+            "scope": "support.function.delimiter.elm",
+            "settings": {
+                "name": "function brackets, comma's",
+                "foreground": "#939293"
             }
         },
         {
@@ -1616,6 +1666,13 @@
             "settings": {
                 "name": "Immutable variables, often via a const modifier, should receive the following scope. Depending on the language and semantics, entity.name.constant may be a better choice.",
                 "foreground": "#ab9df2"
+            }
+        },
+        {
+            "scope": "variable.other.readwrite",
+            "settings": {
+                "name": "read/write variables",
+                "foreground": "#fcfcfa"
             }
         },
         {
